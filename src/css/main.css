@@ -11,6 +11,10 @@ html, body {
     height: 100%;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     color: rgb(134, 134, 134);
@@ -137,18 +141,17 @@ h2 {
 }
 
 /* Text Content */
-.blurb {
-    display: block;
-    vertical-align: top;
-    /* min-width: 550px; */
-}
+
+/*.blurb {*/
+/*    display: block;*/
+/*    vertical-align: top;*/
+/*    !* min-width: 550px; *!*/
+/*}*/
 
 .picture {
-    /* width: 33%; */
-    /* height: 250px; */
-    display: block;
-    width: 100%;
-    height: 275px;
+    /*display: block;*/
+    max-width: 100%;
+    height: auto;
 }
 
 #intro {
@@ -357,7 +360,7 @@ position the close button again, so they don't overlap */
     }
 
     .picture {
-        width: 35%;
+        width: 350px;
         display: inline-block;
     }
 }
