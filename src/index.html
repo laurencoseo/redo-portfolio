@@ -45,110 +45,106 @@
 </head>
 
 <body>
-    <div class="container p-0 m-0">
-        <header class="header">
-            <div class="topnav" id="myTopnav">
+    <header class="header">
+        <div class="topnav" id="myTopnav">
+            <a href="/">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="https://medium.com/@laurencoseo" target="_blank">Blog</a>
+            <a href="javascript:void(0);" class="icon" onclick="openNav()">
+                <i class="fa fa-bars"></i></a>
+        </div> <!-- /.topnav -->
+
+        <!-- Overlay for Responsive Nav Bar -->
+        <div class="overlay" id="myNav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
                 <a href="/">Home</a>
                 <a href="#about">About</a>
                 <a href="#projects">Projects</a>
                 <a href="https://medium.com/@laurencoseo" target="_blank">Blog</a>
-                <a href="javascript:void(0);" class="icon" onclick="openNav()">
-                    <i class="fa fa-bars"></i></a>
-            </div> <!-- /.topnav -->
+            </div>   <!-- /.overlay-content-->
+        </div>  <!-- /.overlay-->
+    </header>
 
-            <!-- Overlay for Responsive Nav Bar -->
-            <div class="overlay" id="myNav">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <div class="overlay-content">
-                    <a href="/">Home</a>
-                    <a href="#about">About</a>
-                    <a href="#projects">Projects</a>
-                    <a href="https://medium.com/@laurencoseo" target="_blank">Blog</a>
-                </div>   <!-- /.overlay-content-->
-            </div>  <!-- /.overlay-->
-        </header>
+    <!-- INTRO SECTION -->
+    <div class="container">
+        <div class="row" >
+            <div class="col-sm">
+                <h1 id="intro">Lauren Coseo</h1>
+                <hr class="sm-line">
+                <p>California based junior software engineer with a background
+                    in mechanical engineering. Over a year of experience with Java
+                    and C++. Currently working on projects in Android Studio
+                    using Java and Kotlin.</p>
+                <a href="#projects"><button type="button">My Projects</button></a>
+            </div><!-- /.col -->
+            <div class="col-sm">
+                <img src="img/me.jpg" class="picture rounded" alt="Lauren smiles in Doolin, Ireland">
+            </div><!-- /.col-->
+        </div><!-- /.row-->
+    </div><!-- /.container-->
 
-        <div class="main">
-            <div class="content-wrapper">
+    <!-- ABOUT SECTION -->
+    <div class="container about" id="about">
+        <h2>Hi! I'm Lauren 👩🏻‍💻</h2>
+        <p>I'm from southeastern Michigan, and currently live in
+            California. I received a <b>B.S in Mechanical
+            Engineering</b> from the University of Michigan  and completed the <b>Graduate Certificate
+            Program in Software Design and Development</b> from the
+            University of Washington Bothell. </p>
+        <p> When I'm not coding, I love being outside and playing
+            sports. My favorite activites are volleyball, hiking,
+            backpacking, skiing, and yoga. I love eating and cooking
+            - especially pasta. My book goal for 2022 is 50 books.
+        </p>
+    </div><!-- /.about -->
 
-                <!-- INTRO SECTION -->
-                <div class="row" >
-                    <div class="col-sm">
-                        <h1 id="intro">Lauren Coseo</h1>
-                        <hr>
-                        <p>California based junior software engineer with a background
-                            in mechanical engineering. Over a year of experience with Java
-                            and C++. Currently working on projects in Android Studio
-                            using Java and Kotlin.</p>
-                        <a href="#projects"><button type="button">My Projects</button></a>
-                    </div><!-- /.blurb -->
-                    <div class="col-sm">
-                        <img src="img/me.jpg" class="picture rounded" alt="Lauren smiles in Doolin, Ireland">
-                    </div><!-- /.picture-->
+    <!-- PROJECT SECTION -->
+    <div class="container projects" id ="projects">
+        <h2>My Projects</h2>
+        <hr>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="img/card1.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Dice Roller</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">See Project</a>
+                    </div>
                 </div>
-
-                <!-- ABOUT SECTION -->
-                <div class="about" id="about">
-                    <h2>Hi! I'm Lauren 👩🏻‍💻</h2>
-                    <p>I'm from southeastern Michigan, and currently live in
-                        California. I received a <b>B.S in Mechanical
-                        Engineering</b> from the University of Michigan  and completed the <b>Graduate Certificate
-                        Program in Software Design and Development</b> from the
-                        University of Washington Bothell. </p>
-                    <p> When I'm not coding, I love being outside and playing
-                        sports. My favorite activites are volleyball, hiking,
-                        backpacking, skiing, and yoga. I love eating and cooking
-                        - especially pasta. My book goal for 2022 is 50 books.
-                    </p>
-                </div><!-- /.about -->
-
-                <!-- PROJECT SECTION -->
-                <div class="projects" id = "projects">
-                    <h2>My Projects</h2>
-                    <hr>
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <div class="card" style="width: 18rem;">
-                                <img class="card-img-top" src="img/card1.jpg" alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">Dice Roller</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="#" class="btn btn-primary">See Project</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="card" style="width: 18rem;">
-                                <img class="card-img-top" src="img/card2.jpg" alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">Lemonade App</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="#" class="btn btn-primary">See Project</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div> <!-- /.row -->
-                </div> <!-- /.projects -->
-
-                <!-- SITE INFO SECTION -->
-                <div class="site">
-                    <a href="/siteinfo">About this site</a>
+            </div>
+            <div class="col-sm-6">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="img/card2.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Lemonade App</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">See Project</a>
+                    </div>
                 </div>
+            </div>
+        </div> <!-- /.row -->
+    </div> <!-- /.projects -->
 
-            </div><!-- /.content-wrapper-->
-        </div><!-- /.main-->
 
-        <footer class="footer">
-            <ul>
-                <li><a href="mailto:laurencoseo@gmail.com"><i class="far fa-envelope"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/lauren-coseo/"><i class="fab fa-linkedin"></i></a></li>
-                <li><a href="https://github.com/laurencoseo"><i class="fab fa-github"></i></a></li>
-                <li><a href="https://instragram.com/lauren_codes"><i class="fa-brands fa-instagram"></i></a></li>
-            </ul>
-            <p>&#169 2022 Lauren Coseo</p>
-        </footer>
 
-    </div><!-- /.container -->
+<!--                &lt;!&ndash; SITE INFO SECTION &ndash;&gt;-->
+<!--                <div class="site">-->
+<!--                    <a href="/siteinfo">About this site</a>-->
+<!--                </div>-->
+
+    <footer class="footer">
+        <ul>
+            <li><a href="mailto:laurencoseo@gmail.com"><i class="far fa-envelope"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/lauren-coseo/"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="https://github.com/laurencoseo"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://instragram.com/lauren_codes"><i class="fa-brands fa-instagram"></i></a></li>
+        </ul>
+        <p>&#169 2022 Lauren Coseo</p>
+    </footer>
+
 
     <script>
         /* Open */
